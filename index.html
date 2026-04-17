@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clima Minimalista</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <main class="app-shell">
+    <section class="weather-panel">
+      <header class="panel-header">
+        <h1>Clima</h1>
+        <p>Consulta el clima de cualquier ciudad con Open-Meteo.</p>
+      </header>
+
+      <form id="city-form" class="city-form">
+        <label for="city-input">Ciudad</label>
+        <div class="input-group">
+          <input id="city-input" name="city" type="text" placeholder="Ej. Madrid" autocomplete="off" required>
+          <button type="submit">Buscar</button>
+        </div>
+      </form>
+
+      <div id="message" class="message"></div>
+
+      <section id="weather-card" class="weather-card hidden">
+        <div class="weather-main">
+          <div>
+            <p class="weather-city" id="weather-city"></p>
+            <p class="weather-description" id="weather-description"></p>
+          </div>
+          <p class="weather-temp" id="weather-temp"></p>
+        </div>
+        <div class="weather-details">
+          <div>
+            <span>Viento</span>
+            <strong id="weather-wind"></strong>
+          </div>
+          <div>
+            <span>Dirección</span>
+            <strong id="weather-wind-dir"></strong>
+          </div>
+          <div>
+            <span>Hora</span>
+            <strong id="weather-time"></strong>
+          </div>
+        </div>
+      </section>
+    </section>
+  </main>
+  <script src="js/script.js" defer></script>
+</body>
+</html>
